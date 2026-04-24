@@ -4,9 +4,9 @@ import React from 'react';
 import avatar from '@/assets/user.png'
 const Navbar = () => {
     return (
-        <div className='flex justify-between mt-5 items-center'>
-            <div></div>
-            <ul className='flex justify-center gap-3 text-[#706F6F] text-lg leading-8'>
+        <div className='flex flex-col md:flex-row space-y-3 justify-center md:justify-between mt-2 md:mt-5 items-center'>
+            <div className='hidden lg:flex'></div>
+            <ul className='flex justify-center gap-3 text-[#706F6F] text-sm md:text-lg leading-8'>
                 <li>
                     <Link href={'/'}>
                         Home
@@ -25,7 +25,7 @@ const Navbar = () => {
             </ul>
             <div className='flex items-center justify-center gap-2'>
                 <Image src={avatar} alt='user Avatar' width={41} height={41} />
-                <button className='px-10 py-2  bg-[#403F3F] text-white font-semibold text-xl'>
+                <button className='px-5 md:px-10 py-1 md:py-2  bg-[#403F3F] text-white font-semibold text-xl'>
                     <Link href={'/login'}>
                         Login
                     </Link>
