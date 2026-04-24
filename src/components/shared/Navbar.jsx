@@ -2,25 +2,26 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import avatar from '@/assets/user.png'
+import NavLink from './NavLink';
 const Navbar = () => {
     return (
         <div className='flex flex-col md:flex-row space-y-3 justify-center md:justify-between mt-2 md:mt-5 items-center'>
             <div className='hidden lg:flex'></div>
             <ul className='flex justify-center gap-3 text-[#706F6F] text-sm md:text-lg leading-8'>
                 <li>
-                    <Link href={'/'}>
+                    <NavLink href={'/'}>
                         Home
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link href={'/about'}>
+                    <NavLink href={'/about'}>
                         About
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link href={'/career'}>
+                    <NavLink href={'/career'}>
                         Career
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
             <div className='flex items-center justify-center gap-2'>
